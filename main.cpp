@@ -24,8 +24,10 @@ struct Tour {
 
 int main() {
 
+	std::cout << std::endl;
 	std::string ruler {"1234567890123456789012345678901234567890123456789012345678901234567890"};
 	std::cout << ruler << std::endl;
+	std::cout << std::endl;
 
 	Tour cool_tours
 	{"Tour Ticket Prices from San Francisco", 
@@ -59,5 +61,21 @@ int main() {
 			}			
 		}
 	};	
+
+	std::cout << cool_tours.name << std::endl;
+	std::cout << "----------------------------------------------------------------------" << std::endl;
+	std::cout << std::endl;
+	for(auto &country : cool_tours.countries) {
+	
+		std::cout << country.name << std::endl;
+		for(auto &city : country.cities) {
+		
+			std::cout << "\t" << city.name;
+			std::cout << "\t" << city.population;
+			std::cout << "\t" << city.cost;
+			std::cout << std::endl;
+		}
+	}		
+
 	return 0;
 }
