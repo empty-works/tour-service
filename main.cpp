@@ -3,19 +3,23 @@
 #include <vector>
 #include <string>
 
-struct Cities {
+struct City {
 
-	
+	std::string name {};
+	int population {0};
+	double cost {0.0};
 };
 
-struct Countries {
+struct Country {
 
-
+	std::string name {};
+	std::vector<City> cities {};
 };
 
-struct Tours {
+struct Tour {
 
-
+	std::string name {};
+	std::vector<Country> countries {};
 };
 
 int main() {
