@@ -75,7 +75,8 @@ int main() {
 		std::cout << country.name;
 		for(auto &city : country.cities) {
 		
-			std::cout << std::setw(14) << std::right << city.name;
+			std::cout << std::setw(20) << std::left << "";
+			std::cout << city.name;
 			std::cout << "\t" << city.population;
 			std::cout << "\t" << city.cost;
 			std::cout << std::endl;
