@@ -62,12 +62,12 @@ int main() {
 		}
 	};	
 
-	std::cout << cool_tours.name << std::endl;
+	std::cout << std::setw(53) << std::right << cool_tours.name << std::endl;
 	std::cout << "----------------------------------------------------------------------" << std::endl;
 	std::cout << std::endl;
 	for(auto &country : cool_tours.countries) {
 	
-		std::cout << country.name << std::endl;
+		std::cout << country.name;
 		for(auto &city : country.cities) {
 		
 			std::cout << "\t" << city.name;
@@ -76,6 +76,6 @@ int main() {
 			std::cout << std::endl;
 		}
 	}		
-
+	std::cout << std::endl;
 	return 0;
 }
