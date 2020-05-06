@@ -80,8 +80,8 @@ int main() {
 			else
 				std::cout << std::setw(20) << std::left << "";
 			is_first = false;
-			std::cout << city.name;
-			std::cout << "\t" << city.population;
+			std::cout << std::setw(25) << std::left << city.name;
+			std::cout << std::setw(20) << std::left << city.population;
 			std::cout << "\t" << city.cost;
 			std::cout << std::endl;
 		}
