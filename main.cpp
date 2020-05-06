@@ -71,11 +71,15 @@ int main() {
 	std::cout << std::endl;
 	std::cout << "----------------------------------------------------------------------" << std::endl;
 	for(auto &country : cool_tours.countries) {
-	
-		std::cout << country.name;
+
+		bool is_first {true};	
 		for(auto &city : country.cities) {
 		
-			std::cout << std::setw(20) << std::left << "";
+			if(is_first)
+				std::cout << std::setw(20) << std::left << country.name;
+			else
+				std::cout << std::setw(20) << std::left << "";
+			is_first = false;
 			std::cout << city.name;
 			std::cout << "\t" << city.population;
 			std::cout << "\t" << city.cost;
