@@ -67,7 +67,7 @@ int main() {
 	std::cout << "Country"; 
 	std::cout << std::setw(17) << std::right << "City";
 	std::cout << std::setw(31) << std::right << "Population";
-	std::cout << std::setw(15) << std::right << "Price";
+	std::cout << std::setw(14) << std::right << "Price";
 	std::cout << std::endl;
 	std::cout << "----------------------------------------------------------------------" << std::endl;
 	for(auto &country : cool_tours.countries) {
@@ -81,7 +81,7 @@ int main() {
 				std::cout << std::setw(20) << std::left << "";
 			is_first = false;
 			std::cout << std::setw(25) << std::left << city.name;
-			std::cout << std::setw(20) << std::left << city.population;
+			std::cout << std::setw(17) << std::left << city.population;
 			std::cout << "\t" << city.cost;
 			std::cout << std::endl;
 		}
